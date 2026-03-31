@@ -1,65 +1,147 @@
 body {
-  font-family: "Georgia", "Times New Roman", serif;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  color: #222;
-  line-height: 1.7;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-size: 32px;
-  margin-bottom: 5px;
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 15px 10px 15px;
 }
 
-.subtitle {
-  color: #666;
-  margin-top: 0;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 5px;
 }
 
-nav {
-  margin: 20px 0 30px 0;
+.site-title {
+  font-size: 64px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
 }
 
-nav a {
-  margin-right: 20px;
+.topnav {
+  padding-bottom: 8px;
+}
+
+.topnav a {
   text-decoration: none;
-  color: #1a4f8b;
+  color: #7a6b63;
+  font-size: 24px;
+  margin-left: 34px;
 }
 
-nav a:hover {
+.topnav a:hover {
   text-decoration: underline;
 }
 
-.container {
+.divider {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 18px 0 26px 0;
+}
+
+.content {
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
 }
 
-.sidebar {
-  width: 220px;
-  font-size: 15px;
-}
-
-.main {
+.left-column {
   flex: 1;
+  max-width: 560px;
+  font-size: 24px;
+  line-height: 1.35;
 }
 
-.section {
-  margin-bottom: 30px;
+.left-column p {
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
-.paper-title {
-  font-weight: bold;
+.left-column a {
+  color: #111;
 }
 
-a {
-  color: #1a4f8b;
+.contact {
+  color: #7a6b63;
+  margin-top: 46px;
+  line-height: 1.25;
 }
 
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #777;
+.contact a {
+  color: #7a6b63;
+}
+
+.right-column {
+  width: 470px;
+  flex-shrink: 0;
+}
+
+.right-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  margin-top: 26px;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 0 0 28px 0;
+}
+
+.last-updated {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.cv-link-inline a {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    display: block;
+  }
+
+  .site-title {
+    font-size: 48px;
+    margin-bottom: 14px;
+  }
+
+  .topnav {
+    padding-bottom: 0;
+  }
+
+  .topnav a {
+    margin-left: 0;
+    margin-right: 22px;
+    font-size: 22px;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .left-column {
+    max-width: none;
+    font-size: 22px;
+  }
+
+  .right-column {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
