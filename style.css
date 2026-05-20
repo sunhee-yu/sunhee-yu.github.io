@@ -1,7 +1,7 @@
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #111;
-  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;  /* Georgia → Inter */
+  color: #1a1a1a;
+  background-color: #fafaf8;  /* #ffffff → #fafaf8 */
   margin: 0;
   padding: 0;
 }
@@ -20,8 +20,9 @@ body {
 }
 
 .site-title {
+  font-family: 'EB Garamond', serif;  /* 이 줄 추가 */
   font-size: 64px;
-  font-weight: normal;
+  font-weight: 600;  /* normal → 600 */
   margin: 0;
   line-height: 1;
 }
@@ -44,8 +45,8 @@ body {
 
 .topnav a {
   text-decoration: none;
-  color: #7a6b63;
-  font-size: 24px;
+  color: #2c4a7c;  /* #7a6b63 → #2c4a7c */
+  font-size: 18px;  /* 24px → 18px */
   margin-left: 34px;
 }
 
@@ -79,7 +80,7 @@ body {
 }
 
 .left-column a {
-  color: #111;
+  color: #2c4a7c;  /* #111 → #2c4a7c */
 }
 
 .contact {
